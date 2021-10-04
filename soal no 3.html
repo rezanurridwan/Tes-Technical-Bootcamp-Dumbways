@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Untuk No 3</title>
+</head>
+<body>
+    <div class="box" id="satu" style="height: 100px; display: block;"></div>
+    <div class="box" id="dua"></div>
+
+
+
+    <script>
+        function segitiga(panjang) {
+            let hasil = '';
+            for (let i = 0; i < panjang; i++) {
+                for (let j = panjang; j > i; j--) {
+                    hasil +=  j;
+                }
+                hasil += '\n';
+            }
+            return hasil;
+        }
+        console.log(segitiga(4))
+
+        function segitiga1(panjang1) {
+        let hasil1 = '';
+        for (let a = panjang1; a > 0; a--) {
+            for (let b = panjang1; b > 0; b--) {
+                if (b > a) {
+                    hasil1 += ' ';
+                } else {
+                    hasil1 += b
+                }
+            }
+            hasil1 += '\n';
+        }
+        return hasil1;
+    }
+    console.log(segitiga1(4));
+    </script>
+</body>
+</html>
